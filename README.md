@@ -9,7 +9,7 @@ What is a potential pitfall with using `typeof bar === "object"` to determine if
 How can this pitfall be avoided?
 
 ### A:
-The type of `null` is `"object"`, which may lead to suprising results. The
+One pitfall is that `null` values have a `typeof` of `"object"`, which may lead to suprising results. The
 problem can be avoided by checking if the object is `null` first:
 ```javascript
 function isAnObject(bar) {
